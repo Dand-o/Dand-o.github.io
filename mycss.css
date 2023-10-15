@@ -77,7 +77,8 @@ td {
 }
 
 th {
-    background-color: hsl(204, 100%, 50%);
+    background-color: #035e7b;
+    color: #fff;
 }
 
 tr:hover {
