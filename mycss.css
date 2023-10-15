@@ -1,21 +1,22 @@
 body {
-    font-family: Inter; 
-    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 200;
+    color: #5d5955;
     margin: 0;
     padding: 0;
     height: 100%;
-    background: url("Images/nightsky.jpg");
+    background-color: antiquewhite;
     background-repeat: repeat;
 
 }
 
 h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 4em;
+    text-align: left;
+    margin-top: -10px;
+    font-size: 5em;
+    font-family: 'League Spartan', sans-serif;
+    color: #a2a77f;
     
-    font-family: 'Times New Roman', Times, sans-serif;
-    font-weight: lighter;
     
 }
 
@@ -25,22 +26,23 @@ h1 {
 
 h2 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: -20px;
     font-size: 2em;
-    border: 2px solid black;
     font-weight: lighter;
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: underline;
 }
 
 h3 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 1em;
-    border: 2px solid black; 
+
 }
 
 p {
-    color: aqua;
+    color:#5d5955;
+    font-size: large;
     justify-content: center;
     margin-left: 20%;
     margin-right: 20%
@@ -88,7 +90,7 @@ nav ul {
     list-style-type: none;
     /* Removes the bullet points */
     padding: 0;
-    margin: 0;
+    margin-left: 40%;
     display: flex;
     /* Makes the list items appear horizontally */
 }
@@ -101,12 +103,15 @@ nav li {
 nav a {
     text-decoration: none;
     /* Removes the underline from links */
-    color: rgb(255, 255, 255);
+    color: #035e7b;
     /* Sets the link color to black */
+    display: inline-block;
 }
 
 nav a:hover {
-    color: blue;
+    color: #002e2c;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
     /* Changes color to blue when hovered over */
 }
 
