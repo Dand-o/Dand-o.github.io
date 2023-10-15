@@ -12,13 +12,39 @@ body {
 
 h1 {
     text-align: left;
-    margin-top: -10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     font-size: 5em;
     font-family: 'League Spartan', sans-serif;
-    color: #a2a77f;
+    color: #035e7b
     
     
 }
+
+/* header 1 effect */
+
+h1 {
+    position: relative;
+    overflow: hidden; /* Ensures the sliding background stays within the h1 boundaries */
+    display: inline-block; /* Makes sure overflow applies properly */
+}
+
+h1::before {
+    content: ''; /* This is necessary for the pseudo-element to exist */
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start position to the left of the h1 element */
+    width: 100%; 
+    height: 100%; 
+    background-color: #5d5955; 
+    transition: left 0.4s; /* slide speed */
+    opacity: 50%; /* opacity of element, allows text to show through my desired colour */
+}
+
+h1:hover::before {
+    left: 0; /* End position covering the h1 element */
+}
+
 
 #content {
     padding: 20px;
@@ -26,17 +52,18 @@ h1 {
 
 h2 {
     text-align: center;
-    margin-top: -20px;
+    margin-top: 0px;
     font-size: 2em;
-    font-weight: lighter;
+    font-weight: bold;
     font-family: 'League Spartan', sans-serif;
     text-decoration: underline;
+    color: #a2a77f;
 }
 
 h3 {
     text-align: center;
     margin-top: 10px;
-    font-size: 1em;
+    font-size: 1.5em;
 
 }
 
@@ -45,7 +72,7 @@ p {
     font-size: large;
     justify-content: center;
     margin-left: 20%;
-    margin-right: 20%
+    margin-right: 20%;
 }
 
 /* ---- Colour of hyperlinks ----- */
@@ -91,7 +118,7 @@ nav ul {
     list-style-type: none;
     /* Removes the bullet points */
     padding: 0;
-    margin-left: 40%;
+    margin-left: 30%;
     display: flex;
     /* Makes the list items appear horizontally */
 }
@@ -107,6 +134,8 @@ nav a {
     color: #035e7b;
     /* Sets the link color to black */
     display: inline-block;
+    font-size: larger;
+    font-weight: 300;
 }
 
 nav a:hover {
@@ -115,24 +144,3 @@ nav a:hover {
     transform: scale(1.1);
     /* Changes color to blue when hovered over */
 }
-
-#construction {
-    margin-top: -150px;
-    text-align
-    : center;
-    
-}
-
-
-
-/* body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    
-    will-change: transform;
-} */
