@@ -118,7 +118,7 @@ nav ul {
     list-style-type: none;
     /* Removes the bullet points */
     padding: 0;
-    margin-left: 30%;
+    margin-left: 10%;
     display: flex;
     /* Makes the list items appear horizontally */
 }
@@ -143,4 +143,16 @@ nav a:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.1);
     /* Changes color to blue when hovered over */
+}
+
+#video2 {
+    margin-left: 50%;
+    margin-top: -50%;
+    margin-bottom: 12%;
+}
+
+#video5 {
+    margin-left: 78%;
+    margin-top: -50%;
+    margin-bottom: 4.7%;
 }
