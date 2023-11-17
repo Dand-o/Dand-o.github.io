@@ -156,3 +156,15 @@ nav a:hover {
     margin-top: -50%;
     margin-bottom: 4.7%;
 }
+
+#saferinternet {
+    color: #32a852;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 5em;
+    font-family: 'League Spartan', sans-serif;
+    }
+#saferinternet:hover{
+    color: #9c4fc9;
+
+}
