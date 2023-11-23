@@ -31,6 +31,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap" rel="stylesheet">
     <!---Navigation menu-->
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+  
+  <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="weekone.html">Week One</a></li>
+        <li><a href="weektwo.html">Week Two</a></li>
+        <li><a href="weekthree.html">Week Three</a></li>
+        <li><a href="weekfour.html">Week Four</a></li>
+        <li><a href="weekfive.html">Week Five</a></li>
+        <li><a href="weeksix.html">Week six</a></li>
+        <li><a href="weekseven.html">Week seven</a></li>
+        <li><a href="weekeight.html">Week eight</a></li>
+        <li><a href="weeknine.html">Week Nine</a></li>
+        <li><a href="weekten.html">Week ten</a></li>
+        <li><a href="weekeleven">Week eleven</a></li>
+      </ul>
+  </nav>
+  
   </head>
 
   <body>
@@ -48,6 +71,18 @@
       which one they would look at online, and by selecting, we can provide reasons why the selection they made was good or bad.
     </p>
     </div>
+
+    <div id="page-navigation">
+      <a href="weekone.html" id="next-page">Next Page</a>
+  </div>
+  
     <script src="myjava.js"></script>
+    
+    <script>
+      document.querySelector('.hamburger-menu').addEventListener('click', function() {
+          document.querySelector('#nav-menu').classList.toggle('show');
+      });
+  </script>
+  
   </body>
 </html>
