@@ -84,7 +84,7 @@ a:hover {
     color: #9c4fc9;
 }
 
-/*This is for the table for week two lab Task */
+/*This is for the table for week two & five lab Task */
 
 table {
     width: 60%;
@@ -205,6 +205,15 @@ nav a:hover {
     cursor: pointer; /* changes the cursor on hover to indicate it's clickable */
     transition: filter 0.3s ease; /* adds a smooth transition effect */
 }
+
+.audio-container {
+    display: flex;
+    flex-direction: column; /* Stack audio controls vertically */
+    gap: 20px; /* Adjust the space between each audio control */
+    align-items: center; /* Center align the audio controls */
+    padding: 20px; /* Optional padding for the container */
+}
+
 
 /* if i have time I will tidy this and combine things into one ID, at the moment, having things individually 
 done helps me keep things clear whilst I still build. If I run out of time, I will keep it this way */
