@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const scrollSpeed = 0.3;
 
     const dataFirst = [
-        { characteristic: "Age", rationale: "13-65+ (will look at usability for the older generation, and see wether or not we can lessen the scope of the age range. Are 65+ year old getting their information from Twitter? If not, narrow scope) " },
+        { characteristic: "Age", rationale: "13-65+ (will look at usability for the older generation). Mostly aiming this for younger people 13-18, the 18+ part of the audience is for adults that are guardians of main target audience. I still wish to provide valuable resources for them to point their children to, whether they are parents, teachers or guardians. " },
         { characteristic: "Gender", rationale: "This is aimed at every gender. Misinformation does not discriminate."},
         { characteristic: "Language Proficiency", rationale: "I want to ensure the project is as accessible as it can be for a wide variety of audiences. By using infographics and interactive features, we can make it engaging for the younger generation, and also, for the 25+ audience, we can give options to expand information in finer detail. As long as we provide the hard hitting main facts at first and allow for a further look into the facts and figures) " },
         { characteristic: "Education Level", rationale: "As above. I want to make this available for younger folk, starting high-school, right up to university level educated students and adults."},
@@ -31,25 +31,38 @@ document.addEventListener("DOMContentLoaded", function() {
         { characteristic: "Sentence variety", comments: "The variety in this page is very good. Not one single sentence starts with the same words. "},
         { characteristic: "Shorter paragraphs", comments: "They use a great lengths of sentences and paragraphs. Always keeping things short and concise, simple to ready and getting the point quickly. This is important for somebody who is seeking the information they are providing and ensuring it is easy to find and consume. "},
         { characteristic: "Positive Language", comments: "The language used is very carefully constructed to be as inclusive and bias free as possible. By doing so, the language itself comes across positive, even when talking about a negative. They use language to provide knowledge and advice on how to help identify misinformation, how to tackle it and what to do to help teach people to identify it. They encourage positivity, and so, naturally create a positive tone in their writing. "},
-        { characteristic: "Tone and voice", comments: "There is a more informal tone to this website. But it doesn't lack formality either, it is conversational, and uses informality where appropriate, giving a nice conversational feel to the content whilst also keeping a professional tone where needed. "}
-    ]
-    function populateTable(tableId, data) {
-        const tableBody = document.querySelector(`#${tableId} tbody`);
-        if (!tableBody) {
-            return;
-        }
+        { characteristic: "Tone and voice", comments: "There is a more informal tone to this website. But it doesn't lack formality either, it is conversational, and uses informality where appropriate, giving a nice conversational feel to the content whilst also keeping a professional tone where needed. "},
+    ];
 
+    const dataThird = [
+        { characteristic: "Name", Description: "Ewan"},
+        { characteristic: "Occupation", Description: "Student"},
+        { characteristic: "Web Habits", Description: "Mostly uses phone apps, such as TikTok, Instagram, Snapchat, Twitter. Rarely uses a computer, and when he does, it's for school work. "},
+        { characteristic: "Knowledge level", Description: "Has a basic knowledge of how to use the internet, but doesn't know how to identify misinformation. Apps such as TikTok have blurred the lines because of the type of media, and media personalities coming out of these platforms."},
+        { characteristic: "Goals", Description: "To help him understand how to identify misinformation, and how to help identify it, through text, videos and other multimedia sources of information. "},
+        { characteristic: "Skills", Description: "Understands his way around apps, good knowledge of how the platforms work and has great understnading of technology such as mobile phones, tablets and consoles."},
+        { characteristic: "Narrative", Description: "Using an interactive website that makes use of videos, text and other multimedia to help teach the user how to identify misinformation, helps to provide the user with a medium that they are already used to. Fast, easy to access information with interactive elements to keep engaged."},
+    ];   
+    
+    const populateTable = (tableId, data) => {
+        const tableBody = document.querySelector(`#${tableId}`);
+        if (!tableBody) {
+            return; // Exit the function if the table doesn't exist
+        }
         data.forEach(item => {
             const row = tableBody.insertRow();
             const cell1 = row.insertCell(0);
             const cell2 = row.insertCell(1);
             cell1.textContent = item.characteristic;
-            cell2.textContent = item.comments || item.rationale;
+            cell2.textContent = item.comments || item.rationale || item.Description;
         });
     }
+    
 
     populateTable("data-table", dataFirst);
     populateTable("text-analysis", dataSecond);
+    populateTable("data-persona", dataThird);
+    
 
         //week five table js
 
