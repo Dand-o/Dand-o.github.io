@@ -131,7 +131,8 @@ nav ul {
     list-style-type: none;
     /* Removes the bullet points */
     padding: 0;
-    margin-left: 10%;
+    margin-left: 20%;
+    justify-content: center;
     display: flex;
     /* Makes the list items appear horizontally */
 }
