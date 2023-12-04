@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!---This is the list for the navigation menu at the top of the page styling is in mycss and myjava-->
+    <nav>
+      <ul>
+        <li><a href="/src/html/index.html">Home</a></li>
+        <li><a href="/src/html/weekone.html">Week One</a></li>
+        <li><a href="/src/html/weektwo.html">Week Two</a></li>
+        <li><a href="/src/html/weekthree.html">Week Three</a></li>
+        <li><a href="/src/html/weekfour.html">Week Four</a></li>
+        <li><a href="/src/html/weekfive.html">Week Five</a></li>
+        <li><a href="/src/html/weeksix.html">Week six</a></li>
+        <li><a href="/src/html/weekseven.html">Week seven</a></li>
+        <li><a href="/src/html/weekeight.html">Week eight</a></li>
+        <li><a href="/src/html/weeknine.html">Week Nine</a></li>
+        <li><a href="/src/html/weekten.html">Week ten</a></li>
+      </ul>
+    </nav>
+    
+    <title>Misinformation on Social Media</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/mycss.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!---Navigation menu-->
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div> 
+  </div> <!---I attempted to mess around with condensing the menu down into a "burger" menu but I was unsuccessful-->
+   </head>
+
+  <body>
+    
+
+    <h1>Misinformation<br> on Social Media.</h1>
+    <h2>Introduction</h2>
+    <p>My project will aim to educate and challenge the audiences views on misinformation on social media.
+      By using digital media, I want to create an interactive and educational experience that allows the audience to
+      think about the choices they make when consuming information online. By creating an experience that educates
+      people on the important decisions they make online, I hope to create awarenes on the importance of information literacy.
+
+      Using a simple interface, which requires the user to simply scroll through the website to go through the information,
+      the website will occasionally provide a simple selection between two 'news stories', requiring the audience to choose
+      which one they would look at online, and by selecting, we can provide reasons why the selection they made was good or bad.
+    </p>
+    </div>
+<!---This is the buttons for navigating to the previous and next page to make nabigation easier-->
+    <div id="page-navigation">
+      <a href="src/html/weekone.html" id="next-page">Next Page</a>
+  </div>
+  <!---for the java elements-->
+    <script src="src/js/myjava.js"></script>
+  <!---more of the attempted "burger menu"-->
+    <script>
+      document.querySelector('.hamburger-menu').addEventListener('click', function() {
+          document.querySelector('#nav-menu').classList.toggle('show');
+      });
+  </script>
+  
+  </body>
+</html>
