@@ -56,7 +56,7 @@ h2 {
     font-weight: bold;
     font-family: 'League Spartan', sans-serif;
     text-decoration: underline;
-    color: #a2a77f;
+    color: #60644F;
 }
 /*Heading 3 style */
 h3 {
@@ -92,7 +92,7 @@ ul {
 /* ---- Colour of hyperlinks ----- */
 
 a {
-    color: #32a852
+    color: #60644F
 }
 /* hover colour for hyperlinks */
 a:hover {
@@ -173,7 +173,7 @@ nav a:hover {
 }
 
 #saferinternet {
-    color: #32a852;
+    color: #60644F;
     text-align: center;
     margin-top: 10px;
     font-size: 5em;
