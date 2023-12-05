@@ -160,17 +160,6 @@ nav a:hover {
     /* Changes color to blue when hovered over */
 }
 /* here is the styling for the videos in week 8,  */
-#video2 {
-    margin-left: 50%;
-    margin-top: -50%;
-    margin-bottom: 12%;
-}
-
-#video5 {
-    margin-left: 78%;
-    margin-top: -50%;
-    margin-bottom: 4.7%;
-}
 
 #saferinternet {
     color: #60644F;
@@ -232,6 +221,32 @@ nav a:hover {
 
 #trump_master {
   margin-left: 20% auto;
+}
+
+figcaption {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'League Spartan', sans-serif;
+    color: #60644F;
+    margin-top: 10px;
+
+}
+
+#video-container1, #video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 320px;
 }
 
 /* if i have time I will tidy this and combine things into one ID, at the moment, having things individually 

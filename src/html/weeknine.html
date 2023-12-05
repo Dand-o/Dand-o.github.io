@@ -35,38 +35,56 @@
    
 <h1>Week <br> nine </h1>
 
-
-</p>
 <h2>Original videos</h2>
-      </p>
 
-      <p>
-        <video controls width="320" width="320" height="240">
+<p>
+      <div id="video-container1">
+        <figure>
+        <video id= "video1" controls width="320" height="240">
             <source src="/assets/videos/online_browsing.mp4" type="video/mp4">
-            <source src="/assets/videos/browsing_edit_high.mov" type="video/mp4">
-            <source src="/assets/videos/browsing_edit_med.mov" type="video/mp4">
-            <source src="/assets/videos/browsing_edit_low.mov" type="video/mp4">
-          <track label="English" kind="subtitles" srclang="en" src="/audio/week-ten-vtt-file.vtt" default> <!---This is week ten's task, it is not working as of yet-->
           </video> 
-      </p>
-      <h2>Edited videos</h2>
+          <figcaption>Video 1: Online browsing (original)</figcaption>
+        </figure>
+
+        <figure>
+          <video id= "video2" controls width="320" height="240">    
+            <source src="/assets/videos/social_media_icons.mp4" type="video/mp4">
+        </video>
+        <figcaption>Video 2: Social media icons (original)</figcaption>
+        </figure>
+        </div>
+      
       <p>
-        <video id= "video2" controls width="320" width="320" height="240">    
-            <source src="/assets/videos/social_media_icons.mp4" type="video/mp4"> 
-        </video>
+      
+      <h2>Edited videos</h2>
+      </p>
+      <div id="video-container">
         <!---High quality edited video-->
-        <video id= "video3" controls width="320" width="320" height="240">    
-            <source src="/assets/videos/browsing_edit_high.mov" type="video/mp4">    
+        <figure>
+        <video id= "video3" controls width="320" height="240">    
+            <source src="/assets/videos/browsing_edit_high.mov" type="video/mp4">
+            <track label="English" kind="subtitles" srclang="en" src="/masterfiles/audio-master/week-ten-vtt-file.vtt" default />   
         </video>
+        <figcaption>High quality (1080p), merged both videos, added notification sound.</figcaption>
+        </figure>
         <!---Medium quality video-->
-        <video id= "video4" controls width="320" width="320" height="240">    
-            <source src="/assets/videos/browsing_edit_med.mov" type="video/mp4">    
+        <figure>
+        <video id= "video4" controls width="320" height="240">    
+            <source src="/assets/videos/browsing_edit_med.mov" type="video/mp4"> 
+            <track label="English" kind="subtitles" srclang="en" src="/masterfiles/audio-master/week-ten-vtt-file.vtt" default />   
         </video>
+        <figcaption>Medium quality(720p), merged both videos, cropped and added notification sound.</figcaption> 
+        </figure>
         <!---Low quality video-->
-        <video id= "video5" controls width="320" width="320" height="240">    
-            <source src="/assets/videos/browsing_edit_low.mov" type="video/mp4">    
+        <figure>
+        <video id= "video5" controls width="320" height="240">    
+            <source src="/assets/videos/browsing_edit_low.mov" type="video/mp4">
+            <track label="English" kind="subtitles" srclang="en" src="/masterfiles/audio-master/week-ten-vtt-file.vtt" default />
         </video>
-    </p>
+        <figcaption>Low quality(480p), merged both videos, cropped and added notification sound.</figcaption>    
+        </figure>
+    </div>
+</p>
 
     <div id="page-navigation">
       <a href="weekeight.html" id="prev-page">Week Eight</a>
