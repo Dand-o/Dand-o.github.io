@@ -11,9 +11,10 @@ body {
 
 h1 {
     text-align: left;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 5em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 25%;
+    font-size: 6em;
     font-family: 'League Spartan', sans-serif;
     color: #035e7b
     
@@ -45,31 +46,38 @@ h1:hover::before {
 }
 
 
-#content {
-    padding: 20px;
-}
+
 /* Heading 2 style */
 h2 {
-    text-align: center;
-    margin-top: 0px;
-    font-size: 2em;
+    text-align: left;
+    margin-top: 25px;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-bottom: 0%;
+    font-size: 3em;
     font-weight: bold;
     font-family: 'League Spartan', sans-serif;
-    text-decoration: underline;
     color: #60644F;
 }
 /*Heading 3 style */
 h3 {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 1.5em;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 2em;
 
 }
 /* heading 4 style */
 h4 {
-        text-align: center;
-        margin-top: 0px;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 25%;
+        margin-right: 25%;
         font-family: 'League Spartan', sans-serif;
+        font-size: 20px;
 
 }
 /* paragrah style */
@@ -77,16 +85,22 @@ p {
     color:#5d5955;
     font-size: large;
     justify-content: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    line-height: 1.6;
+    margin-bottom: 0;
+    margin-top: 0%;
 }
 /* list styling (menu at top) */
 ul {
     color: #5d5955;
     font-size: large;
+    text-align: left;
     justify-content: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    list-style-position: inside;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0%;
 }
 
 /* ---- Colour of hyperlinks ----- */
@@ -102,9 +116,11 @@ a:hover {
 /*This is for the table for week two & five lab Task. hover effect and some styling */
 
 table {
-    width: 60%;
+    width: 50%;
     border-collapse: collapse;
-    margin: 20px auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
@@ -132,22 +148,21 @@ nav ul {
     list-style-type: none;
     /* Removes the bullet points */
     padding: 0;
-    margin-left: 20%;
+    margin-left: 25%;
+    margin-top: 1%;
     justify-content: center;
     display: flex;
     /* Makes the list items appear horizontally */
 }
 
 nav li {
-    margin-right: 20px;
+    margin-right: 1%;
     /* Adds some spacing between menu items */
 }
 
 nav a {
     text-decoration: none;
-    /* Removes the underline from links */
     color: #035e7b;
-    /* Sets the link color to black */
     display: inline-block;
     font-size: larger;
     font-weight: 300;
@@ -177,7 +192,9 @@ nav a:hover {
 #page-navigation {
     display: flex;
     justify-content: space-between;
-    margin: 20px 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
     padding: 10px 0;
 }
 
@@ -236,6 +253,7 @@ figcaption {
 
 #video-container1, #video-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -245,9 +263,24 @@ figcaption {
 figure {
     display: inline-block;
     text-align: center;
-    margin: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0%;
     width: 320px;
 }
 
+@media (min-width: 600px) {
+    #video-container1 {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+image {
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%
+    width: 50%;
+}
 /* if i have time I will tidy this and combine things into one ID, at the moment, having things individually 
 done helps me keep things clear whilst I still build. If I run out of time, I will keep it this way */
