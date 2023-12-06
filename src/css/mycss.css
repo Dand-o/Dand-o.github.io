@@ -229,11 +229,11 @@ nav a:hover {
 }
 
 .audio-container {
-    display: flex;
-    flex-direction: column; /* Stack audio controls vertically */
-    gap: 20px; /* Adjust the space between each audio control */
-    align-items: center; /* Center align the audio controls */
-    padding: 20px; /* Optional padding for the container */
+    flex-direction: column;
+    gap: 20px; 
+    align-items: left; 
+    margin-left: 25%;
+    padding: 20px;
 }
 
 #trump_master {
@@ -254,7 +254,7 @@ figcaption {
 #video-container1, #video-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
     gap: 10px;
   
@@ -269,17 +269,16 @@ figure {
     width: 320px;
 }
 
-@media (min-width: 600px) {
-    #video-container1 {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 image {
     display: block;
     margin-left: 25%;
     margin-right: 25%
+}
+
+iframe {
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
     width: 50%;
 }
 /* if i have time I will tidy this and combine things into one ID, at the moment, having things individually 
